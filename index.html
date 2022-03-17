@@ -18,50 +18,36 @@
 </head>
 
 <body>
-    <header class="navbar">
+    <header class="navbar" id="#top">
         <div class="container flex justify-btw item-center">
             <div>
                 <a class="brand" href="#"> <strong> flexor</strong></a>
             </div>
             <nav class="nav-menu">
                 <ul class="flex ">
-                    <li class="nav-menu-list "><a class="active" href="#">home</a></li>
-                    <li class="nav-menu-list "><a href="#">about</a></li>
-                    <li class="nav-menu-list "><a href="#">services</a></li>
-                    <li class="nav-menu-list "><a href="#">portfolio</a></li>
-                    <li class="nav-menu-list "><a href="#">team</a></li>
-                    <li class="nav-menu-list "><a href="#">pricing</a></li>
-                    <li class="nav-menu-list "><a href="#">blog</a></li>
+                    <li class="nav-menu-list " ><a class="active" href="#">home</a></li>
+                    <li class="nav-menu-list " id="#about"><a href="#">about</a></li>
+                    <li class="nav-menu-list " id="#services"><a href="#">services</a></li>
+                    <li class="nav-menu-list " id="#portfolio"><a href="#">portfolio</a></li>
+                    <li class="nav-menu-list " id="#team"><a href="#">team</a></li>
+                    <li class="nav-menu-list " id="#pricing"><a href="#">pricing</a></li>
+                    <li class="nav-menu-list " ><a href="blog.html">blog</a></li>
                     <li class="nav-menu-list sub-menu-box">
-                        <a href="#">
-                            <span>dropdown</span>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
+                        <a href="#">Drop Down <span><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="sub-menu">
-                            <li><a href="#">dropdown-1</a></li>
-                            <li class="sub-menu-box"><a href="#">dropdown-2
-                                    <i class="fa-solid fa-angle-right"></i>
-                                </a>
-                                <ul class="sub-menu-box">
-                                    <li class="sub-menu-2">  <a href="#">dropdown-01</a></li>
-                                    <li class="sub-menu-2"> <a href="#">dropdown-02</a></li>
-                                    <li class="sub-menu-2"> <a href="#">dropdown-03</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">dropdown-3</a></li>
-                            <li><a href="#">dropdown-4</a></li>
-                            <li><a href="#">dropdown-5</a></li>
-
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Owner</a></li>
+                            <li><a href="#">price</a></li>
                         </ul>
                     </li>
-                    <li class="nav-menu-list active"><a href="#">contact</a></li>
+                    <li class="nav-menu-list active" id="#contact"><a href="#">contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <!-- hero -->
     <main>
-        <section class="hero">
+        <section class="hero" id="#hero">
             <div class="container">
                 <h1>welcome to flexor</h1>
                 <h3>we are the team of talented designers making websites wit bootstrap</h3>
@@ -103,7 +89,7 @@
                 </div>
             </div>
         </section>
-        <section class="about container flex justify-btw">
+        <section class="about container flex justify-btw" id="#about">
             <div class="flex-40">
                 <img class="flexiable-img" src="assets/media/about-img.jpg" alt="draft vedio">
                 <button class="btn btn-primary">
@@ -173,7 +159,7 @@
                 <button class="circle"></button>
             </div>
         </section>
-        <section class="services container padding">
+        <section class="services container padding" id="#services">
             <h2>services</h2>
             <p>magno meerto the lasca pa apple ent to bank of spaion that makes horrible cases a mindgame by the
                 professor. adipisicing elit. Expedita neque dicta explicabo accusantium.</p>
@@ -288,7 +274,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio container padding">
+        <section class="portfolio container padding" id="#portfolio">
             <h2>portfolio</h2>
             <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Consectetur maxime laborum reiciendis est deserunt corrupti.
@@ -313,7 +299,7 @@
                 <img src="assets/media/portfolio/portfolio-9.jpg" alt="pic9">
             </div>
         </section>
-        <section class="team  container">
+        <section class="team  container" id="#team">
             <h2>team</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quia ab quo officia, repellendus
                 cupiditate, dicta eius Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, animi?
@@ -350,7 +336,7 @@
 
             </div>
         </section>
-        <section class="pricing container padding ">
+        <section class="pricing container padding " id="#pricing">
             <h2>pricing</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur non sapiente velit fuga nobis.
                 Eligendi vel exercitationem praesentium, dolorum excepturi quas labore laborum placeat, veritatis natus
@@ -473,35 +459,155 @@
             </div>
 
         </section>
-        <section class="contact container padding">
+        <section class="contact container padding" id="#contact">
             <h2>contact</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt dolor adipisci distinctio voluptates
                 obcaecati a doloribus sit ab fugit odio? Dolores adipisci vitae magnam explicabo quasi natus, eveniet
                 necessitatibus dolore.</p>
             <div class="combined-section">
-                <div class="flex">
+                <div class="flex justify">
                     <div class="contact-box">
-                        <div class="flex">
+                        <div class="flex ">
                             <a href="#"><i class="fa-solid fa-location-dot"></i></a>
                             <h3>our address</h3>
                         </div>
                         <address>
-                            A105,adam street, new york, ny 540034
+                            A <span> 105</span>,adam street, new york , ny <span> 540043</span>
                         </address>
                     </div>
+                    <div class="contact-box">
+                        <div class="flex ">
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            <h3>email us</h3>
+                        </div>
+                        <p>info@example.com</p>
+                        <p>contact@example.com</p>
+                    </div>
+                    <div class="contact-box">
+                        <div class="flex ">
+                            <a href="#"><i class="fa-solid fa-phone-volume"></i></a>
+                            <h3>call us</h3>
+                        </div>
+                        <p>+1 5589 55488 55</p>
+                        <p>+1 5429 25438 69</p>
+
+                    </div>
                 </div>
-                <section class="form-section">
-                    <form class="form flex-general flex-wrap">
-                        <input type="name" placeholder="Your Name" class="flex-48 name" />
-                        <input type="email" placeholder="Your Email" class="flex-48 email" />
-                        <input type="name" placeholder="Subject" class="flex-100 subject" />
-                        <textarea class="text-area" rows="10" placeholder="Message"></textarea>
-                        <input type="Submit" value="Send Message" class="form-btn" />
+                <section class="form-section ">
+                    <form class="form wrap">
+                        <div class="flex justify-btw">
+                            <input type="name" class="form-control f1" placeholder="Your Name" class="flex-48 name" />
+                            <input type="email" class="form-control f1" placeholder="Your Email"
+                                class="flex-48 email" />
+                        </div>
+                        <input type="name" class="form-control" placeholder="Subject" class="flex-100 subject" />
+                        <textarea class="text-area form-control" rows="6" placeholder="Message"></textarea>
+                        <input type="Submit" class="form-control form-btn" value="Send Message" class="form-btn" />
                     </form>
                 </section>
             </div>
         </section>
     </main>
+    <footer class="footer-1 container padding full-width">
+        <div class="flex justify">
+            <div class="flex-30 footer-content ">
+                <h2>Flexor</h2>
+                <address>
+                    A<span>105</span>,adam street, new york , ny <span> 540043</span>
+                </address>
+                <p><strong>Phone:</strong> +1 5589 5548 55</p>
+                <p><strong>Email:</strong> info@example.com</p>
+            </div>
+            <div class="flex-20 footer-content ">
+                <h2>useful links</h2>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span><a href="#">home</a></span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span><a href="#">About us</a></span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span><a href="#">services</a></span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span><a href="#">term of service</a></span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span><a href="#">Privacy policy</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div class=" flex-20 footer-content ">
+                <h2>our services</h2>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span><a href="#">Web design</a></span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span><a href="#">web Development</a></span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span><a href="#">product Management</a></span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span><a href="#">marketing</a></span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span><a href="#">Graphic design</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-30 footer-content ">
+                <h2>join our Newsletter</h2>
+                <p>if you liked then sure get a Subscribed.. </p>
+                <div class="flex margin justify-right white-bg">
+                    <a class="btn btn-primary" href="#">subscribe</a>
+                  </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer-2 container padding">
+        <div class="flex justify-btw">
+            <div>
+                <small>&copy;copyright,<strong>Flexor</strong>All rights reserved <br> Designed by <span class="active">SMITHAN KUMAR . R</span>  </small>
+            </div>
+                <nav class="footer-nav">
+                    <ul class="flex ">
+                        <li>
+                            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-skype"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-nav top-btn">
+                <li>
+                    <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+                </li>
+            </div>
+        </footer>
 </body>
 
 </html>

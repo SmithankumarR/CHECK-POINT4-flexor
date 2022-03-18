@@ -245,6 +245,10 @@ a {
   border: 0;
   outline: 0;
 }
+.btn-primary:hover{
+  background-color: var(--primary);
+  color: var(--text-light);
+}
 .btn-primary {
   background-color: rgb(252, 146, 111);
   color: var(--secondary);
@@ -285,6 +289,9 @@ a {
 }
 .nav-menu a {
   font-size: 1.2rem;
+}
+.nav-menu a:hover{
+  color: var(--primary);
 }
 .nav-menu-list select:checked ~ option {
   display: inline;
@@ -342,12 +349,16 @@ a {
   padding: 0.75rem 0;
   margin-bottom: 2rem;
 }
-.icon {
+.hero .icon {
   background-color: var(--primary);
-  width: 2.5rem;
-  height: 2.5rem;
+  color: var(--secondary);
+  width: 2.6rem;
+  height: 2.6rem;
+  line-height: 2.6;
+  text-align: center;
   border-radius: 50%;
   position: absolute;
+  top:22.5rem;
 }
 .hero h5 {
   background-color: rgb(88, 75, 72);
@@ -355,9 +366,9 @@ a {
   font-size: 1rem;
   width: 12rem;
   vertical-align: middle;
-  height: 1.8rem;
+  height: 2.4rem;
   padding-left: 4rem;
-  line-height: 1.8rem;
+  line-height: 2.4;
   margin: 0.5rem 0;
   border-radius: 1.4rem;
 }
@@ -453,6 +464,10 @@ a {
   height: 5vh;
   line-height: 1vh;
 }
+.iconic:hover{
+  color: var(--secondary);
+  background-color: var(--primary);
+}
 .about-content {
   margin-left: 2rem;
 }
@@ -465,6 +480,9 @@ a {
   width: 6.6rem;
   height: 4rem;
   filter: grayscale(100%);
+}
+.clients img:hover{
+  filter: none;
 }
 .circle {
   width: 0.3rem;
@@ -504,37 +522,40 @@ a {
   border-radius: 50%;
   text-align: center;
 }
+.services i:hover{
+  color: var(--primary);
+  background-color: var(--secondary);
+
+}
 /* services icons */
 .s1 i {
   position: absolute;
-  top: 13rem;
+  top: 15.5rem;
   right: 67rem;
 }
 .s2 i {
   position: absolute;
-  top: 13rem;
-
+  top: 15.5rem;
   right: 40rem;
 }
 .s3 i {
   position: absolute;
-  top: 13rem;
-
+  top: 15.5rem;
   right: 13rem;
 }
 .s4 i {
   position: absolute;
-  bottom: 21.6rem;
+  bottom: 20rem;
   right: 67rem;
 }
 .s5 i {
   position: absolute;
-  bottom: 21.6rem;
+  bottom: 20rem;
   right: 40rem;
 }
 .s6 i {
   position: absolute;
-  bottom: 21.6rem;
+  bottom: 20rem;
   right: 13rem;
 }
 .services-content {
@@ -542,15 +563,20 @@ a {
   margin-left: 2rem;
   margin-bottom: 2rem;
   padding: 2rem;
+  margin-top: 3rem;
 }
 .services-content h3 {
   font-size: 1.4rem;
   margin: 1rem 0;
   font-weight: 600;
   text-align: center;
+  color: var(--text-dark);
 }
 .services-content p {
   color: var(--text-light);
+}
+.services-content h3:hover{
+  color: var(--primary);
 }
 /* values */
 .value-content {
@@ -560,6 +586,10 @@ a {
   );
   padding: 2rem;
   height: 14rem;
+}
+.value-content:hover{
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 .value-content h3 {
   font-size: 1.4rem;
@@ -931,6 +961,11 @@ p {
   padding:0 4rem;
   position: relative;
 }
+.footer-nav li:hover{
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: 1px solid ;
+}
 .footer-nav li{
   background-color: var(--primary);
   margin-left:1rem;
@@ -944,8 +979,93 @@ p {
 .footer-nav i{
   color: var(--secondary);
 }
+.footer-nav i:hover{
+  color: var(--primary);
+}
 .top-btn{
   position:fixed;
   right: 2rem;
   bottom: 2rem;
+}
+
+/* blog page styles */
+.index{
+  background-color: rgba(206, 196, 196, 0.459);
+  color: var(--text-dark);
+  padding: 1.5rem;
+  padding-left: 19rem;
+}
+.index span{
+  padding:0 1rem;
+  vertical-align: baseline;
+  font-size: 1.4rem;
+}
+.index h5{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.index h1{
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+/* card style */
+.card{
+  background-color: var(--secondary);
+  box-shadow: 0 3px 8px var(--text-light);
+  width: 84%;
+  height: 76vh;
+  margin:2rem 1rem;
+}
+.card-wrapper{
+  flex-wrap: wrap;
+}
+.card-content{
+  padding: 1rem;
+}
+.card-content h2{
+  text-transform: none;
+  font-size: 1.8rem;
+}
+.user i{
+  font-size: 1.2rem;
+  color: var(--text-light);
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+.user span{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: var(--text-light);
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
+.user .text{
+  margin-left: 2rem;
+}
+.card-content p{
+  font-size: 1.2rem;
+}
+.card-content .btn{
+  margin-left: 12rem;
+  background-color: var(--primary);
+}
+/* box */
+.num-box{
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+  margin-left: 0.5rem;
+  background-color: var(--secondary);
+  box-shadow: 0 3px 8px var(--text-light);
+
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active-now{
+  background-color: var(--primary);
+  color: var(--secondary);
 }
